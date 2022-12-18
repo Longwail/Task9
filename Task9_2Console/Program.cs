@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
                 string[] lines = File.ReadAllLines("test.txt");
-            using (StreamWriter g = new StreamWriter(File.Open("All.txt", FileMode.Create)))
+            using (StreamWriter g = new StreamWriter(File.Open("All.txt", FileMode.Create),Encoding.GetEncoding(1251)))
             {
                 foreach(string s in lines)
                 {
